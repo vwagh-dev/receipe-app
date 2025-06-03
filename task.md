@@ -52,7 +52,7 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
    - Start: No hook.
    - End: `src/hooks/useAuth.ts` exposes auth state and actions.
 
-9. **Build Registration Page**
+9. **Build Registration Page** ✅ (DONE)
 
    - Start: No register page.
    - End: `src/pages/register.tsx` with form, validation, and Supabase signup.
