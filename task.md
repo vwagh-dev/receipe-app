@@ -6,10 +6,10 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 
 ## 1. Project Setup
 
-1. **Initialize Next.js Project** ✅ (DONE)
+1. **Initialize Next.js Project (with TypeScript)** ✅ (DONE)
 
    - Start: No project files exist.
-   - End: Next.js app scaffolded with TypeScript.
+   - End: Next.js app scaffolded with TypeScript (TypeScript setup included).
 
 2. **Install Dependencies**
 
