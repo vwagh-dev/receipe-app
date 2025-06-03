@@ -57,7 +57,7 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
    - Start: No register page.
    - End: `src/pages/register.tsx` with form, validation, and Supabase signup.
 
-10. **Build Login Page**
+10. **Build Login Page** ✅ (DONE)
 
     - Start: No login page.
     - End: `src/pages/login.tsx` with form, validation, and Supabase signin.
