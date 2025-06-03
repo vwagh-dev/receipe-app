@@ -184,3 +184,10 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 ---
 
 Each task is atomic, testable, and focused on a single concern, enabling efficient handoff and validation between steps.
+
+---
+
+32. **Run Playwright E2E Tests & Ensure Passing**
+
+    - Start: Tests may fail.
+    - End: All Playwright E2E tests pass. ✅ (DONE)

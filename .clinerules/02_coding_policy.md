@@ -56,7 +56,15 @@ This document outlines the coding and testing practices for this project, with a
 
 ---
 
-## 7. Sample Tools
+## 7. Playwright Test Enforcement Policy
+
+- Always check that `npx playwright test` passes without error.
+- If there are errors, review code changes, fix issues, and rerun the tests.
+- This fix-and-rerun loop must be executed at least 3 times if there are test failures.
+
+---
+
+## 8. Sample Tools
 
 - **Unit/Integration:** Jest, React Testing Library
 - **E2E:** Cypress or Playwright
