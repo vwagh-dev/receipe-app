@@ -66,11 +66,15 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
     - Start: No tests.
     - End: Tests for AuthProvider and useAuth.
 
+12. **Protecting Routes** ✅ (DONE)
+    - Start: All routes accessible.
+    - End: ProtectedRoute component implemented, routes require authentication.
+
 ---
 
 ## 4. Recipe Feature
 
-12. **Define Recipe Type**
+13. **Define Recipe Type**
 
     - Start: No type.
     - End: `src/types/recipe.ts` with Recipe interface.
