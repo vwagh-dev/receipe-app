@@ -16,7 +16,7 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
    - Start: Scaffolded app.
    - End: Material UI, Supabase JS client, Jest, React Testing Library, Cypress/Playwright installed.
 
-3. **Set Up Linting & Formatting**
+3. **Set Up Linting & Formatting** ✅ (DONE)
    - Start: No lint/format config.
    - End: ESLint and Prettier configured.
 
