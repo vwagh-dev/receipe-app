@@ -2,16 +2,16 @@
 
 import React, { useState } from 'react';
 import { useAuth } from '@/hooks/useAuth';
-import { Box, Button, TextField, Typography, Alert } from '@mui/material';
+import { Button, TextField, Alert } from '@mui/material';
 
-export default function LoginPage() {
+export function LoginForm() {
   const { signIn, loading } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
     setSuccess(false);
@@ -30,29 +30,23 @@ export default function LoginPage() {
       return;
     }
 
-    const { error } = await signIn(email, password);
-    if (error) {
-      setError(error.message || 'Login failed.');
-    } else {
-      setSuccess(true);
-    }
+    // Only call signIn if validation passes
+    (async () => {
+      const { error } = await signIn(email, password);
+      if (error) {
+        setError(error.message || 'Login failed.');
+      } else {
+        setSuccess(true);
+      }
+    })();
   };
 
+  // Debug: log error state on each render
+  // eslint-disable-next-line no-console
+  console.log('LoginForm error state:', error);
+
   return (
-    <Box
-      maxWidth={400}
-      mx="auto"
-      mt={8}
-      p={4}
-      boxShadow={2}
-      borderRadius={2}
-      bgcolor="background.paper"
-      component="form"
-      onSubmit={handleSubmit}
-    >
-      <Typography variant="h4" mb={2} align="center">
-        Login
-      </Typography>
+    <form onSubmit={handleSubmit}>
       {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
       {success && <Alert severity="success" sx={{ mb: 2 }}>Login successful!</Alert>}
       <TextField
@@ -84,6 +78,6 @@ export default function LoginPage() {
       >
         {loading ? 'Logging in...' : 'Login'}
       </Button>
-    </Box>
+    </form>
   );
 }
