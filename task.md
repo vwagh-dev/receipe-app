@@ -47,7 +47,7 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
    - Start: No auth context.
    - End: `src/providers/AuthProvider.tsx` with context, session state, and methods.
 
-8. **Implement useAuth Hook**
+8. **Implement useAuth Hook** ✅ (DONE)
 
    - Start: No hook.
    - End: `src/hooks/useAuth.ts` exposes auth state and actions.
