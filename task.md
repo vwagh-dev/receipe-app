@@ -62,7 +62,7 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
     - Start: No login page.
     - End: `src/pages/login.tsx` with form, validation, and Supabase signin.
 
-11. **Add Auth Unit Tests**
+11. **Add Auth Unit Tests** ✅ (DONE)
     - Start: No tests.
     - End: Tests for AuthProvider and useAuth.
 
