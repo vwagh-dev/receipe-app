@@ -24,12 +24,12 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 
 ## 2. Core Configuration
 
-4. **Create .env.local for Supabase**
+4. **Create .env.local for Supabase** ✅ (DONE)
 
    - Start: No env file.
    - End: `.env.local` with Supabase URL and anon key.
 
-5. **Initialize Supabase Client**
+5. **Initialize Supabase Client** ✅ (DONE)
 
    - Start: No Supabase client.
    - End: `src/lib/supabaseClient.ts` exports configured client.
