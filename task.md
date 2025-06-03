@@ -34,7 +34,7 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
    - Start: No Supabase client.
    - End: `src/lib/supabaseClient.ts` exports configured client.
 
-6. **Set Up Global Providers**
+6. **Set Up Global Providers** ✅ (DONE)
    - Start: Default `_app.tsx`.
    - End: `_app.tsx` wraps app with ThemeProvider and AuthProvider.
 
@@ -42,7 +42,7 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 
 ## 3. Auth Feature
 
-7. **Create Auth Context & Provider**
+7. **Create Auth Context & Provider** ✅ (DONE)
 
    - Start: No auth context.
    - End: `src/providers/AuthProvider.tsx` with context, session state, and methods.
