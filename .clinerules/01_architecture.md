@@ -11,6 +11,9 @@ This architecture is designed for a modern, scalable recipe sharing application 
 │
 ├── public/                  # Static assets (images, icons, etc.)
 │
+├── tests/
+│   └── e2e/                 # End-to-end (E2E) tests (Playwright, Cypress, etc.)
+│
 ├── src/
 │   ├── components/          # Reusable UI components (Buttons, Cards, etc.)
 │   ├── features/            # Feature-based folders (each with UI, logic, hooks)

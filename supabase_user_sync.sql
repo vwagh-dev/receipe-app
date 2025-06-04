@@ -21,3 +21,25 @@ drop trigger if exists on_auth_user_created on auth.users;
 create trigger on_auth_user_created
 after insert on auth.users
 for each row execute procedure public.handle_new_auth_user();
+
+-- Create public.recipes table for Recipe CRUD
+create table if not exists public.recipes (
+  id uuid primary key default gen_random_uuid(),
+  title text not null,
+  description text,
+  ingredients text[] not null,
+  steps text[] not null,
+  user_id uuid references public.users(id) on delete cascade,
+  created_at timestamp with time zone default now()
+);
+
+-- Add image_url column if it does not exist
+do $$
+begin
+  if not exists (
+    select 1 from information_schema.columns
+    where table_name='recipes' and column_name='image_url'
+  ) then
+    alter table public.recipes add column image_url text;
+  end if;
+end $$;

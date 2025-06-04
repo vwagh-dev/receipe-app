@@ -113,24 +113,24 @@ export default function RegisterPage() {
         >
           {loading ? 'Registering...' : 'Register'}
         </Button>
-      </Box>
-      <Typography
-        variant="body2"
-        mt={2}
-        align="center"
-        sx={{ color: 'text.primary' }}
-      >
-        {"Already have an account? "}
-        <Button
-          component={require('next/link').default}
-          href="/login"
-          variant="text"
-          color="primary"
-          sx={{ textTransform: 'none', p: 0, minWidth: 0 }}
+        <Typography
+          variant="body2"
+          mt={2}
+          align="center"
+          sx={{ color: 'text.primary' }}
         >
-          Login
-        </Button>
-      </Typography>
+          {"Already have an account? "}
+          <Button
+            component={require('next/link').default}
+            href="/login"
+            variant="text"
+            color="primary"
+            sx={{ textTransform: 'none', p: 0, minWidth: 0 }}
+          >
+            Login
+          </Button>
+        </Typography>
+      </Box>
     </>
   );
 }
