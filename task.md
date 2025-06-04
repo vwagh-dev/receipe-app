@@ -177,17 +177,17 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 
 ## 8. E2E & Integration
 
-31. **Write E2E Test: Registration/Login**
+31. **Write E2E Test: Registration/Login** ✅ (DONE)
 
     - Start: No E2E.
     - End: Cypress/Playwright test for user registration and login.
 
-32. **Write E2E Test: Recipe CRUD**
+32. **Write E2E Test: Recipe CRUD** ✅ (DONE)
 
     - Start: No E2E.
     - End: Test for creating, viewing, and listing recipes.
 
-33. **Write E2E Test: User Profile**
+33. **Write E2E Test: User Profile** ✅ (DONE)
     - Start: No E2E.
     - End: Test for viewing user profile.
 
