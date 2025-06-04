@@ -24,17 +24,17 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 
 ## 2. Core Configuration
 
-4. **Create .env.local for Supabase**
+4. **Create .env.local for Supabase** ✅ (DONE)
 
    - Start: No env file.
    - End: `.env.local` with Supabase URL and anon key.
 
-5. **Initialize Supabase Client**
+5. **Initialize Supabase Client** ✅ (DONE)
 
    - Start: No Supabase client.
    - End: `src/lib/supabaseClient.ts` exports configured client.
 
-6. **Set Up Global Providers**
+6. **Set Up Global Providers** ✅ (DONE)
    - Start: Default `_app.tsx`.
    - End: `_app.tsx` wraps app with ThemeProvider and AuthProvider.
 
@@ -42,35 +42,39 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 
 ## 3. Auth Feature
 
-7. **Create Auth Context & Provider**
+7. **Create Auth Context & Provider** ✅ (DONE)
 
    - Start: No auth context.
    - End: `src/providers/AuthProvider.tsx` with context, session state, and methods.
 
-8. **Implement useAuth Hook**
+8. **Implement useAuth Hook** ✅ (DONE)
 
    - Start: No hook.
    - End: `src/hooks/useAuth.ts` exposes auth state and actions.
 
-9. **Build Registration Page**
+9. **Build Registration Page** ✅ (DONE)
 
    - Start: No register page.
    - End: `src/pages/register.tsx` with form, validation, and Supabase signup.
 
-10. **Build Login Page**
+10. **Build Login Page** ✅ (DONE)
 
     - Start: No login page.
     - End: `src/pages/login.tsx` with form, validation, and Supabase signin.
 
-11. **Add Auth Unit Tests**
+11. **Add Auth Unit Tests** ✅ (DONE)
     - Start: No tests.
     - End: Tests for AuthProvider and useAuth.
+
+12. **Protecting Routes** ✅ (DONE)
+    - Start: All routes accessible.
+    - End: ProtectedRoute component implemented, routes require authentication.
 
 ---
 
 ## 4. Recipe Feature
 
-12. **Define Recipe Type**
+13. **Define Recipe Type**
 
     - Start: No type.
     - End: `src/types/recipe.ts` with Recipe interface.
