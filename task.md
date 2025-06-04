@@ -121,37 +121,37 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 
 ## 6. Recipe Feature
 
-21. **Define Recipe Type**
+21. **Define Recipe Type** ✅ (DONE)
 
     - Start: No type.
     - End: `src/types/recipe.ts` with Recipe interface.
 
-22. **Create Recipe Service**
+22. **Create Recipe Service** ✅ (DONE)
 
     - Start: No service.
     - End: `src/services/recipeService.ts` with CRUD functions.
 
-23. **Implement useRecipeList Hook**
+23. **Implement useRecipeList Hook** ✅ (DONE)
 
     - Start: No hook.
     - End: `src/hooks/useRecipeList.ts` fetches recipes.
 
-24. **Build Recipe List Page**
+24. **Build Recipe List Page** ✅ (DONE)
 
     - Start: No list page.
     - End: `src/pages/recipes/index.tsx` displays recipes.
 
-25. **Build Recipe Detail Page**
+25. **Build Recipe Detail Page** ✅ (DONE)
 
     - Start: No detail page.
     - End: `src/pages/recipes/[id].tsx` shows recipe details.
 
-26. **Build Create Recipe Form**
+26. **Build Create Recipe Form** ✅ (DONE)
 
     - Start: No form.
     - End: Component for adding a recipe, integrated with service.
 
-27. **Add Recipe Unit Tests**
+27. **Add Recipe Unit Tests** ✅ (DONE)
     - Start: No tests.
     - End: Tests for recipe service and hooks.
 
@@ -159,17 +159,17 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 
 ## 7. UI Components
 
-28. **Create RecipeCard Component**
+28. **Create RecipeCard Component** ✅ (DONE)
 
     - Start: No component.
     - End: `src/components/RecipeCard.tsx` displays recipe summary.
 
-29. **Create UserAvatar Component**
+29. **Create UserAvatar Component** ✅ (DONE)
 
     - Start: No component.
     - End: `src/components/UserAvatar.tsx` displays user avatar.
 
-30. **Add Component Unit Tests**
+30. **Add Component Unit Tests** ✅ (DONE)
     - Start: No tests.
     - End: Tests for RecipeCard and UserAvatar.
 
