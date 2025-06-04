@@ -72,116 +72,135 @@ This is a granular, step-by-step plan to build the MVP, based on the project arc
 
 ---
 
-## 4. Recipe Feature
+## 4. User Feature
 
-13. **Define Recipe Type**
-
-    - Start: No type.
-    - End: `src/types/recipe.ts` with Recipe interface.
-
-13. **Create Recipe Service**
-
-    - Start: No service.
-    - End: `src/services/recipeService.ts` with CRUD functions.
-
-14. **Implement useRecipeList Hook**
-
-    - Start: No hook.
-    - End: `src/hooks/useRecipeList.ts` fetches recipes.
-
-15. **Build Recipe List Page**
-
-    - Start: No list page.
-    - End: `src/pages/recipes/index.tsx` displays recipes.
-
-16. **Build Recipe Detail Page**
-
-    - Start: No detail page.
-    - End: `src/pages/recipes/[id].tsx` shows recipe details.
-
-17. **Build Create Recipe Form**
-
-    - Start: No form.
-    - End: Component for adding a recipe, integrated with service.
-
-18. **Add Recipe Unit Tests**
-    - Start: No tests.
-    - End: Tests for recipe service and hooks.
-
----
-
-## 5. User Feature
-
-19. **Define User Type**
+13. **Define User Type**
 
     - Start: No type.
     - End: `src/types/user.ts` with User interface.
 
-20. **Create User Service**
+14. **Create User Service**
 
     - Start: No service.
     - End: `src/services/userService.ts` with user fetch/update.
 
-21. **Implement useUser Hook**
+15. **Implement useUser Hook**
 
     - Start: No hook.
     - End: `src/hooks/useUser.ts` fetches user data.
 
-22. **Build User Profile Page**
+16. **Build User Profile Page**
 
     - Start: No profile page.
     - End: `src/pages/users/[id].tsx` shows user info.
 
-23. **Add User Unit Tests**
+17. **Add User Unit Tests**
     - Start: No tests.
     - End: Tests for user service and hooks.
 
 ---
 
-## 6. UI Components
+## 5. Sync DB users (auth.users and public.users)
 
-24. **Create RecipeCard Component**
+18. **Create public.users table and sync triggers** ✅ (DONE)
+
+    - Start: Only auth.users exists.
+    - End: public.users table exists, triggers keep it in sync with auth.users.
+
+19. **Update registration flow to store first/last name** ✅ (DONE)
+
+    - Start: Registration only stores email/password.
+    - End: Registration also stores first/last name in public.users.
+
+20. **Update user service and hooks for new schema** ✅ (DONE)
+
+    - Start: User service/hooks may not use new schema.
+    - End: User service/hooks use id, first_name, last_name.
+
+---
+
+## 6. Recipe Feature
+
+21. **Define Recipe Type**
+
+    - Start: No type.
+    - End: `src/types/recipe.ts` with Recipe interface.
+
+22. **Create Recipe Service**
+
+    - Start: No service.
+    - End: `src/services/recipeService.ts` with CRUD functions.
+
+23. **Implement useRecipeList Hook**
+
+    - Start: No hook.
+    - End: `src/hooks/useRecipeList.ts` fetches recipes.
+
+24. **Build Recipe List Page**
+
+    - Start: No list page.
+    - End: `src/pages/recipes/index.tsx` displays recipes.
+
+25. **Build Recipe Detail Page**
+
+    - Start: No detail page.
+    - End: `src/pages/recipes/[id].tsx` shows recipe details.
+
+26. **Build Create Recipe Form**
+
+    - Start: No form.
+    - End: Component for adding a recipe, integrated with service.
+
+27. **Add Recipe Unit Tests**
+    - Start: No tests.
+    - End: Tests for recipe service and hooks.
+
+---
+
+## 7. UI Components
+
+28. **Create RecipeCard Component**
 
     - Start: No component.
     - End: `src/components/RecipeCard.tsx` displays recipe summary.
 
-25. **Create UserAvatar Component**
+29. **Create UserAvatar Component**
 
     - Start: No component.
     - End: `src/components/UserAvatar.tsx` displays user avatar.
 
-26. **Add Component Unit Tests**
+30. **Add Component Unit Tests**
     - Start: No tests.
     - End: Tests for RecipeCard and UserAvatar.
 
 ---
 
-## 7. E2E & Integration
+## 8. E2E & Integration
 
-27. **Write E2E Test: Registration/Login**
+31. **Write E2E Test: Registration/Login**
 
     - Start: No E2E.
     - End: Cypress/Playwright test for user registration and login.
 
-28. **Write E2E Test: Recipe CRUD**
+32. **Write E2E Test: Recipe CRUD**
 
     - Start: No E2E.
     - End: Test for creating, viewing, and listing recipes.
 
-29. **Write E2E Test: User Profile**
+33. **Write E2E Test: User Profile**
     - Start: No E2E.
     - End: Test for viewing user profile.
 
 ---
 
-## 8. Polish & Docs
+## 9. Polish & Docs
 
-30. **Add Global Styles**
+34. **Add Global Styles**
 
     - Start: No global styles.
     - End: `src/styles/` with base theme and overrides.
 
-31. **Update README**
+35. **Update README**
     - Start: Default README.
     - End: Project setup, scripts, and test instructions documented.
 
@@ -191,7 +210,7 @@ Each task is atomic, testable, and focused on a single concern, enabling efficie
 
 ---
 
-32. **Run Playwright E2E Tests & Ensure Passing**
+36. **Run Playwright E2E Tests & Ensure Passing**
 
     - Start: Tests may fail.
     - End: All Playwright E2E tests pass. ✅ (DONE)
