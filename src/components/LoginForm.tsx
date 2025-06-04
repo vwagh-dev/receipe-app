@@ -3,9 +3,11 @@
 import React, { useState } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import { Button, TextField, Alert } from '@mui/material';
+import { useRouter } from 'next/navigation';
 
 export function LoginForm() {
   const { signIn, loading } = useAuth();
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -37,6 +39,7 @@ export function LoginForm() {
         setError(error.message || 'Login failed.');
       } else {
         setSuccess(true);
+        router.push('/recipes');
       }
     })();
   };

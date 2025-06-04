@@ -2,6 +2,13 @@ import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { LoginForm } from '@/components/LoginForm';
 
+// Mock useRouter from next/navigation
+jest.mock('next/navigation', () => ({
+  useRouter: () => ({
+    push: jest.fn(),
+  }),
+}));
+
 // Mock useAuth
 jest.mock('@/hooks/useAuth', () => ({
   useAuth: () => ({
