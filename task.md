@@ -210,6 +210,35 @@ Each task is atomic, testable, and focused on a single concern, enabling efficie
 
 ---
 
+## 10. TheMealDB Integration
+
+37. **Integrate TheMealDB API Client** ✅ (DONE)
+
+    - Start: No TheMealDB integration.
+    - End: API client for TheMealDB is implemented (search, get recipe by id).
+
+38. **Build Recipe Search UI (TheMealDB)** ✅ (DONE)
+
+    - Start: No search UI.
+    - End: UI to search recipes from TheMealDB and display results.
+
+39. **Show Recipe Details from TheMealDB** ✅ (DONE)
+
+    - Start: No details UI.
+    - End: UI to view full recipe details from TheMealDB search results.
+
+40. **Import TheMealDB Recipe as New Recipe** ✅ (DONE)
+
+    - Start: No import option.
+    - End: User can import a TheMealDB recipe as a new recipe in the app.
+
+41. **Add Unit & Integration Tests for TheMealDB Integration** ✅ (DONE)
+
+    - Start: No tests.
+    - End: Tests for API client, search, import, and UI.
+
+---
+
 36. **Run Playwright E2E Tests & Ensure Passing**
 
     - Start: Tests may fail.
